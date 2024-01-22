@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snowman About to fall</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .scene {
+      position: relative;
+      height: 100vh;
+      background-color: #87CEEB;
+    }
+
+    .snowman {
+      position: absolute;
+      bottom: -2%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: swingSnowman 6s ease-in-out infinite;
+      cursor: pointer;
+    }
+
+    .body {
+      width: 145px;
+      height: 145px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+    
+    .head {
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+
+    .body {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .head {
+      position: absolute;
+      bottom: 100px;
+      left: 0;
+    }
+
+    .eye {
+      width: 10px;
+      height: 10px;
+      background-color: #000;
+      border-radius: 20%;
+      position: absolute;
+      top: 40px;
+      left: 20px;
+    }
+
+    .nose {
+      width: 0;
+      height: 0;
+      border-left: 3px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 12px solid orange;
+      position: absolute;
+      top: 40px;
+      left: 34px;
+    }
+
+    @keyframes swingSnowman {
+      0%, 100% {
+        transform: translateX(-50%) rotate(0deg);
+      }
+      75% {
+        transform: translateX(-50%) rotate(15deg);
+      }
+      75% {
+        transform: translateX(-50%) rotate(-15deg);
+      }
+    }
+
+    .snow {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: #fff;
+      border-radius: 50%;
+      animation: snowfall 5s linear infinite;
+    }
+
+    .snow:nth-child(1) { left: 10%; animation-duration: 5s; }
+    .snow:nth-child(2) { left: 20%; animation-duration: 7s; }
+    .snow:nth-child(3) { left: 30%; animation-duration: 6s; }
+    .snow:nth-child(4) { left: 40%; animation-duration: 4s; }
+    .snow:nth-child(5) { left: 50%; animation-duration: 5s; }
+    .snow:nth-child(6) { left: 60%; animation-duration: 7s; }
+    .snow:nth-child(7) { left: 70%; animation-duration: 6s; }
+    .snow:nth-child(8) { left: 80%; animation-duration: 4s; }
+    .snow:nth-child(9) { left: 90%; animation-duration: 5s; }
+
+    @keyframes snowfall {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="scene">
+    <a href=".././nightview/nightview.html" class="snowman">
+      <div class="body"></div>
+      <div class="head">
+        <div class="eye"></div>
+        <div class="eye" style="left: 50px;"></div>
+        <div class="nose"></div>  
+      </div>
+    </a>
+
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+  </div>
+</body>
+</html>
