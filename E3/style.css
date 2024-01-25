@@ -9,7 +9,7 @@
   }
 
   .glow {
-    font-family: 'Pacifico';
+    font-family: 'Pacifico', "Roboto", sans-serif;
     transition: text-shadow 3s ease-in-out;
   }
   
@@ -46,11 +46,11 @@
   }
 
   .run {
-    font-family: 'Dancing Script';
+    font-family: 'Dancing Script', "Roboto", sans-serif;
     color:rgb(255, 217, 0);
   }
   .grow {
-    font-family: 'Single Day';
+    font-family: 'Single Day', "Roboto", sans-serif;
     color:rgb(0, 137, 80);
   }
   .glow {
