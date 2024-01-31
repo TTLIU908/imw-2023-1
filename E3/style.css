@@ -4,9 +4,14 @@
   }
 
 @keyframes grow {
-    0% { font-size: 48px; }
-    100% { font-size: 136px; }
+    0% { font-size: 21px; }
+    100% { font-size: 100px; }
   }
+
+@font-face {
+    font-family: myFont;
+    src: url(shf.ttf);
+} 
 
   .glow {
     font-family: 'Pacifico', "Roboto", sans-serif;
@@ -39,20 +44,21 @@
   }
   
   .hover-effect {
-    font-size: 48px;
+    font-size: 21px;
     font-weight: bold;
     padding: 10px;
     margin: 10px;
   }
 
   .run {
-    font-family: 'Dancing Script', "Roboto", sans-serif;
+    font-family: "fastpen",'Dancing Script', "Roboto", sans-serif;
     color:rgb(255, 217, 0);
   }
   .grow {
-    font-family: 'Single Day', "Roboto", sans-serif;
+    font-family: myFont,'Single Day', "Roboto", sans-serif;
     color:rgb(0, 137, 80);
   }
   .glow {
     color:rgb(6, 226, 255);
   }
+
