@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(255, 81, 0);
 }
 
 .grid-container {
@@ -40,4 +40,11 @@ body {
 
 .grid-item:hover .overlay {
     opacity: 1;
+}
+
+/*background color changed*/
+@media screen and (max-width: 659px) {
+    body {
+        background-color: #23ff98; 
+    }
 }
