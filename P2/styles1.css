@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*min-height: 100vh;*/
+  background: #0c1a19;
+  overflow-y: scroll;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  color: #ffffff;
+  /*height: 100vh;*/
+}
+.content {
+  position: absolute;
+  top: 2px;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+  min-height: 150vh;
+  background: #0c1a19;
+  flex-wrap: wrap;
+}
+
+.bubbles span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #ffcb30;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #dcb64f44, 0 0 50px #ffcb30, 0 0 100px #ffcb30;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(210s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  background: #f1ff2d;
+  box-shadow: 0 0 0 10px #c0ff2d44, 0 0 50px #f1ff2d, 0 0 100px #f1ff2d;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(10vh) scale(0.8);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bubbles span {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/*--------------------------------------------------*/
+
+body {
+  box-sizing: border-box;
+  background-color: #0c1a19;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: #ffffff;
+  padding: 0em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  font-weight: bold;
+  font-family: "Nabla", system-ui;
+  font-size: 20px;
+}
+
+.logo {
+  font-size: 2.5em;
+}
+
+.bottomlogo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.bottomtext {
+  font-size: 0.8em;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: #ffffff;
+  margin-left: 1.5em;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+}
+
+.image-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  color: #ffcb30;
+}
+
+.image-caption > a {
+  color: #ffcb30;
+  font-weight: bold;
+  font-size: large;
+}
+
+.section-description {
+  margin-top: 1em;
+  display: flex;
+  font-size: 35px;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: #f1ff2d;
+}
+
+.three-columns {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.column1 {
+  flex: 1;
+  margin: 0 em;
+  padding: 1em;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.column23 {
+  flex: 1;
+  margin: 0 em;
+  padding: 1em;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.column1 > p {
+  font-weight: bold;
+  color: #f1ff2d;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  padding-top: 50px;
+}
+
+.column23 > p {
+  font-weight: bold;
+  color:#f1ff2d;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  padding-top:50px;
+  text-align: right;
+}
+
+.column1 > h2 {
+  font-weight: bold;
+  color: #ffcb30;
+}
+
+.column23 > h2 {
+  font-weight: bold;
+  color:#ffcb30;
+  text-align: right;
+}
+
+.location {
+  font-weight: bold;
+  color:hsl(274, 100%, 88%);
+  text-align: right;
+}
