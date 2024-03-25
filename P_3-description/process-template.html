@@ -4,7 +4,7 @@
   <head>
   	<meta name="viewport" content="width=device-width, initial-zoom:1.0">
   	<meta charset="utf-8">
-    <title>Process Page Template</title>
+    <title>Guess Number Game</title>
     <style>
         /* Move all CSS to a stylesheet */
         * { /* Remove default browser spacing */
@@ -73,45 +73,46 @@
   </head>
   <body>
     <div class="process-template">
-        <!-- Start of title -->
+        
         <div class="title">
-            <h1>Page Title</h1>
+            <h1></h1>
         </div>
-        <!-- End of title -->
-        <!-- Start of content -->
+        
         <div class="content">
-            <!-- Start of a section -->
+            
             <div class="section">
-                <h2>Section Title</h2>
+                <h2>implementation method</h2>
                 <p>
-                    This is a paragraph section where you can place your writing such as how you framed the project, what inspired you, what kind of research did you do, how did your idea evolve, what were key points of your refinement process, etc. Each paragraph will need to go into a separate paragraph tag.
+                    const randomNumber = Math.floor(Math.random() * 100) + 1;<br><br>
+                    This line of code uses the Math.random() function to generate a random number between 1 and 100 inclusive.<br><br><br><br><br>
+
+                    guessButton.addEventListener('click', function() {
+                    });
+                    <br><br>
+                    This line of code listens to the click event of the "Guess" button and executes the appropriate code when the user clicks it.<br><br><br><br><br>
+
+                    const guess = parseInt(guessInput.value);<br><br>
+                    This line of code takes what the user typed in the input box and converts it to an integer using the parseInt() function.<br><br><br><br><br>
+
+                    if (guess === randomNumber) {<br>
+                    } else if (guess < randomNumber) {<br>
+                    } else {<br>
+                    }
+                    <br><br>
+                    Based on the user's guess of the size of the number in relation to the random number, a corresponding prompt message is given.<br><br><br><br><br>
+
+                    message.textContent = 'Congratulations! You guessed the number ...';
+                    <br><br>
+                    Use the textContent attribute to update the hints on the page, telling the user that they guessed correctly or incorrectly.<br><br><br><br><br>
+
+                    guessInput.disabled = true;<br>
+                    guessButton.disabled = true;
+                    <br><br>
+                    If the user guesses correctly, disable the input boxes and buttons to prevent the user from continuing to type or click.<br><br><br><br><br>
+
+
                 </p>
-                <!-- Start of a section -->
-                <!-- Start of image with caption -->
-                <figure>
-                  <img src="https://via.placeholder.com/600x300/000000/FFFFFF/?text=Replace+this+placeholder+image" alt="This text should describe the image" width="100%">
-                  <figcaption>Caption text for image if needed</figcaption>
-                </figure>
-                <!-- End of image with caption -->
-            </div>
-            <!-- End of a section -->
-            <!-- Start of a new section -->
-            <div class="section">
-                <h2>Another Section Title</h2>
-                <p>
-                    This is a paragraph section where you can place your writing such as how you framed the project, what inspired you, what kind of research did you do, how did your idea evolve, what were key points of your refinement process, etc. Each paragraph will need to go into a separate paragraph tag.
-                </p>
-                <!-- Start of a section -->
-                <!-- Start of image with caption -->
-                <figure>
-                  <img src="https://via.placeholder.com/600x300/000000/FFFFFF/?text=Replace+this+placeholder+image" alt="This text should describe the image" width="100%">
-                  <figcaption>Caption text for image if needed</figcaption>
-                </figure>
-                <!-- End of image with caption -->
-            </div>
-            <!-- End of a new section -->
-        </div>
-        <!-- End of content -->
+                
     </div>
   </body>
 </html>
