@@ -64,3 +64,8 @@
     color: rgb(190, 60, 60);
     transform: rotateX(40deg) translateY(5px);
   }
+
+  .text{
+    text-align: center;
+    color: rgb(190, 60, 60);
+  }
